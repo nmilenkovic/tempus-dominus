@@ -2419,7 +2419,7 @@
 
         throw new TypeError('Invalid arguments for DateTimePicker: ' + options);
     };
-
+    moment = moment.default || moment;
     $.fn.datetimepicker.defaults = {
         timeZone: '',
         format: false,
