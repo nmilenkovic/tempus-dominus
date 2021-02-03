@@ -1165,6 +1165,9 @@
             },
 
             doAction = function (e) {
+                if (window.innerWidth < 768 && input.is(':focus')){
+                    input.blur();
+                }
                 if ($(e.currentTarget).is('.disabled')) {
                     return false;
                 }
